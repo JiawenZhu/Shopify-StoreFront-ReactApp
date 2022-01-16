@@ -1,0 +1,1 @@
+This is app is using Shopify as the backend. Shopify can create products using it's own CMS. Shopify will provide an API for front-end customers interact with data. 
