@@ -67,12 +67,12 @@ class ShopProvider extends Component {
 
   fetchAllProducts = async () => {
     const products = await client.product.fetchAll();
-    this.setState({ products });
+    this.setState({ products: products });
   };
 
   fetchProductWithHandle = async (handle) => {
     const product = await client.product.fetchByHandle(handle);
-    this.setState({ product });
+    this.setState({ product: product });
 
     return product;
   };
@@ -93,6 +93,7 @@ class ShopProvider extends Component {
 
 
   render() {
+
     return (
       <ShopContext.Provider
         value={{

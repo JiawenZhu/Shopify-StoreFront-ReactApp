@@ -31,7 +31,7 @@ const ProductPage = () => {
         <br />
         <Text fontSize='lg' spacing={3} as='em'>${product.variants[0].price}</Text>
         <br />
-        <Button onClick={()=> addItemToCheckout(product.variants[0].id)}>Add to Cart</Button>
+        <Button onClick={()=> addItemToCheckout(product.variants[0].id, 1)}>Add to Cart</Button>
       </Box>
     </div>
   );
